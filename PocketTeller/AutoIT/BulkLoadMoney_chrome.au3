@@ -1,0 +1,5 @@
+   Local $hWnd = WinWait("Open", "", 7)
+   WinActivate($hWnd)
+   ControlClick($hWnd, "", "Edit1")
+   Send(@ScriptDir&"\BulkUploads\"&"BulkLoadMoney_chrome.xlsx")
+   Send("{ENTER}")
